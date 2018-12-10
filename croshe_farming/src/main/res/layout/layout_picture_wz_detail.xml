@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_pw_back"
+            android:src="@mipmap/back_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:text="图文详情"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/ll_see_img"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text_see_img"
+                android:textColor="@color/orange"
+                android:text="商品详情"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@color/colorhuise1"
+            android:layout_width="1px"
+            android:layout_height="40dp"/>
+        <LinearLayout
+            android:id="@+id/ll_see_parameter"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text_arameter"
+                android:textColor="@color/black"
+                android:text="规格参数"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_big_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/img_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@color/colorhuise"
+        android:id="@+id/ll_excel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_null"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/img_null"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_marginTop="3dp"
+                android:text="暂无数据"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

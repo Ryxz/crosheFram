@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_fragment1_city"
+            android:text="合肥"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/img_fragment1_up"
+            android:src="@mipmap/img_up"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_search_02"
+            android:layout_weight="1"
+            android:background="@drawable/head_backgound"
+            android:layout_marginLeft="10dp"
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:src="@mipmap/img_find"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/edit_fragment1"
+                android:hint="有机蔬菜 "
+                android:textColorHint="@color/white"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_message_f2"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/img_message" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_fragment02_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorhuise1"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_f_02"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="3"
+                    android:id="@+id/ll_fragment02_r_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_all"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="#eeeeee"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/ll_all_product"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:text="全部"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:visibility="visible"
+                            android:id="@+id/img_01"
+                            android:src="@mipmap/img_upzhank"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/img_02"
+                            android:src="@mipmap/img_down"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorhuise1"></View>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+                android:id="@+id/refresh_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tv_re_lei_1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+            </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_hideview"
+                android:background="#50000000"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include layout="@layout/item_products" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

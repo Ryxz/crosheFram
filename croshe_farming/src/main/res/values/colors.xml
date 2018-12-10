@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/holo_orange_dark</color>
+    <color name="colorPrimaryDark">@android:color/holo_orange_dark</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorhuise">#eeeeee</color>
+    <color name="colorhuise1">#dddddd</color>
+    <color name="colorbaise">#ffffff</color>
+    <color name="colorhongse">#ff0000</color>
+    <color name="colorhuangse">#ffaa00</color>
+    <color name="colorhuise2">#888888</color>
+    <color name="blue">#888888</color>
+    <color name="tureblue">#5391f5</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="orange">#ffff8800</color>
+    <color name="green">#0dab0b</color>
+    <color name="gray">#7b7c7b</color>
+    <color name="hblack">#c9c9c9</color>
+    <color name="orange1">#f9983e</color>
+    <color name="green1">#90f93a</color>
+</resources>

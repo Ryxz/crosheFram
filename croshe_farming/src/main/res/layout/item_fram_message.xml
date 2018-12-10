@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_fram_msg"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_fram_meg"
+            android:layout_width="90dp"
+            android:layout_height="60dp" />
+        <TextView
+            android:id="@+id/text_fram_meg"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:text="介绍"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+<View
+    android:background="@color/colorhuise"
+    android:layout_width="match_parent"
+    android:layout_height="1px"/>
+</LinearLayout>

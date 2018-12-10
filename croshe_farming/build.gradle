@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+
+
+android {
+//    signingConfigs {
+////        debug {
+////            storeFile file("E:\\CrosheAndroidWorkSpace\\crosheFram\\croshe_farming\\croshe_farming2.jks")
+////            keyAlias 'croshe'
+////            keyPassword '123456'
+////            storePassword '123456'
+////        }
+//    }
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.croshe.farming"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 23
+        versionName "1.0.2"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':Croshe_AndroidBase')
+    //    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.6'
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.android:flexbox:0.3.0'
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.2'
+    //左滑删除
+    //    compile 'com.shuyu:GSYVideoPlayer:2.0.1'//视频播放
+    compile 'fm.jiecao:jiecaovideoplayer:5.6'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //事件传递
+    compile files('libs/libammsdk.jar')
+    //微信API
+    compile files('libs/ShareSDK-Wechat-2.8.0.jar')
+    //
+    compile files('libs/ShareSDK-Wechat-Core-2.8.0.jar')
+    //
+    compile files('libs/ShareSDK-Wechat-Moments-2.8.0.jar')
+    //微信
+    compile 'com.jungly:gridPasswordView:0.3'
+    //支付密码
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //腾讯bugly
+    compile files('libs/alipaySdk-20151112.jar')
+}

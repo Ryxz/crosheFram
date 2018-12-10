@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_sign_list">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/item_head"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:text="本月已签到 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_sign_day"
+            android:text="0"
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:text=" 天，累计获得 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0"
+            android:id="@+id/text_all_jifen"
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:text=" 积分"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise"
+        android:layout_width="match_parent"
+        android:layout_height="2px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_sign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_show_pop"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/alert_white_up_20">
+            <ImageView
+                android:src="@mipmap/img_drop_down"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginBottom="40dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp">-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:background="@drawable/alert_white_up_30"></RelativeLayout>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp">-->
+            <!--<LinearLayout-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="2dp"></LinearLayout>-->
+        <!--</LinearLayout>-->
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

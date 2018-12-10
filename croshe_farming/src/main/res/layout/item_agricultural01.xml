@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/ll_choose_ps"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btu_shou"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/weixuanzhong"
+                android:textColor="@color/colorbaise" />
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:id="@+id/btu_choose_shou"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/xuanzhong"
+                android:textColor="@color/colorbaise" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_shou"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_shou_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="douyu"
+                android:textColor="@color/colorAccent" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_shou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="douyu"
+                android:textColor="@color/colorAccent" />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_shou_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="douyu"
+                    android:textColor="@color/colorAccent" />
+                <LinearLayout
+                    android:gravity="right|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/ll_market_jian"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/jian" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/bian">
+
+                        <TextView
+                            android:id="@+id/text_market_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_market_jia"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/img_jia" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorhuise1"></LinearLayout>
+</LinearLayout>

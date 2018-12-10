@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/text_package_name"
+            android:text="科学搭配"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_package_price"
+            android:text="￥234.00"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:background="@drawable/alert_orange_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/text_package_save"
+                android:textColor="@color/orange"
+                android:text="节省:￥0.0"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_buy_it"
+            android:gravity="center"
+            android:background="@drawable/bg_orange_5"
+            android:layout_width="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="27dp">
+            <TextView
+                android:textColor="@color/white"
+                android:text="购买"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="right|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_see_detail"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/img_up_zhankai"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/img_close_detail"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/img_down_zhankai"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_imgs"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_scientific_img1"
+                android:layout_margin="10dp"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_imgs_02"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/img_addelse"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <ImageView
+                android:id="@+id/img_scientific_img2"
+                android:layout_margin="10dp"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/ll_imgs_03"-->
+            <!--android:visibility="gone"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:src="@mipmap/img_addelse"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp" />-->
+            <!--<ImageView-->
+                <!--android:id="@+id/img_scientific_img3"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="90dp" />-->
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/img_more"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <ImageView
+                android:src="@mipmap/img_addelse"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/img_morepro"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_imgs_detail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+            <ImageView
+                android:id="@+id/img_details"
+                android:layout_margin="10dp"
+                android:layout_width="80dp"
+                android:layout_height="90dp" />
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/text_product_details"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@color/colorhuise"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_scientific_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+</LinearLayout>

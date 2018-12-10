@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEEEE"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/fragment01_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_fragment01_service"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@mipmap/img_service"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                     />
+
+                <TextView
+                    android:text="联系客服"
+                    android:textSize="13sp"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_fragment01_findfirm"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:src="@mipmap/img_findfarm"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="查看农场"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_fragment01_package"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@mipmap/img_package"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:text="套餐推荐"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_fragment01_signin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:src="@mipmap/img_signin"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+                <TextView
+                    android:singleLine="true"
+                    android:text="签到赚积分"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_fragment01_firminformation"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@mipmap/img_information"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+
+                <TextView
+                    android:text="农场资讯"
+                    android:textSize="13sp"
+                    android:singleLine="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/qiandao_background"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/img_toutiao"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+              <TextView
+                  android:id="@+id/tv_title"
+                  android:maxEms="17"
+                  android:singleLine="true"
+                  android:ellipsize="end"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/tv_title1"
+                    android:maxEms="17"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+            <LinearLayout
+                android:id="@+id/ll_t1"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="农场养植"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="自己饲养，吃的放心"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView01"
+                        android:layout_margin="3dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                         />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView02"
+                        android:layout_marginLeft="10dp"
+                        android:layout_margin="3dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="1px"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:id="@+id/ll_t2"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:text="农场种植"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:text="自己家的菜园子，想吃啥种啥"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/home_imageView3"
+                            android:src="@mipmap/img_framezhongzhi"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/home_imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/img_framezhongzhi" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@android:color/white">
+            <LinearLayout
+                android:id="@+id/ll_t3"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="当季推荐"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="当下季节推荐种植"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/home_imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/framjijie" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/home_imageView2"
+                            android:src="@mipmap/framjijie"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="1px"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:id="@+id/ll_t4"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <TextView
+                    android:text="种植+养殖"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:text="合理利用，创造最大价值"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView03"
+                        android:layout_margin="3dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                         />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView04"
+                        android:layout_margin="3dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+        <TextView
+            android:text="商品推荐"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

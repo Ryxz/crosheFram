@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/orange"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/img_find" />
+
+            <EditText
+                android:hint="请输入"
+                android:textColorHint="@color/white"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/refresh_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+</LinearLayout>

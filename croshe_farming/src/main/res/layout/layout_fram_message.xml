@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_frammsg_back"
+            android:src="@mipmap/back_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="农场资讯"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <ImageView
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/img_message"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mRefreshLayout_fram_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_fram_message"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+            </android.support.v7.widget.RecyclerView>
+
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    </RelativeLayout>
+
+</LinearLayout>

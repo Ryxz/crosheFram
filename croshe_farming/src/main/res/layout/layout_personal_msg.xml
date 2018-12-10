@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/item_head"/>
+    <LinearLayout
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_head"
+            android:src="@mipmap/head"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorhuise1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="昵称 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_change_sex"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="性别 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/edit_sex"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="用户邮箱 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_com"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="手机号码 :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+</LinearLayout>

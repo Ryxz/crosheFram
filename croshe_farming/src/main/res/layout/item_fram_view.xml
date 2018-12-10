@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+    <ImageView
+        android:id="@+id/iv_img_farm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:alpha="0.5">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农家撒养土鸡"
+            android:typeface="serif"
+            android:textColor="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/weizhi" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:text="合肥市肥东县"
+                android:textColor="@color/colorbaise" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+<LinearLayout
+    android:background="@color/colorbaise"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_fram_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="肥东农场"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_features"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+
+</LinearLayout>
+

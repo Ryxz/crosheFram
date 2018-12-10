@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="请输入需要种植/养殖的数量"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edit_num"
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_gray_10"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="取消"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_orange_5"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="确定"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

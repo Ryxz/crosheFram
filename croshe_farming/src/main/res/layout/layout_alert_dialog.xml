@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/alert_dialog_bj">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#a3a3a3"
+            android:text="温馨提示"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <TextView
+
+        android:textColor="#a3a3a3"
+        android:id="@+id/tvDialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="是否确认删除?"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:text="取消"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border_soft_gray"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <Button
+
+            android:id="@+id/btnYes"
+            android:text="确定"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/boreder_soft_orange"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+</LinearLayout>

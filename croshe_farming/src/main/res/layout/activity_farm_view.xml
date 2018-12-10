@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorhuise"
+    android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:background="@color/colorPrimary"
+          android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/iv_left_6"
+                android:gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="match_parent">
+                  <ImageView
+                      android:layout_marginLeft="10dp"
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:src="@mipmap/back_1" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看农场"
+                android:textSize="16sp"
+                android:textColor="@color/colorbaise"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="1">
+                  <ImageView
+                      android:visibility="gone"
+                      android:id="@+id/iv_message"
+                      android:layout_margin="15dp"
+                      android:layout_width="25dp"
+                      android:layout_height="25dp"
+                      android:src="@mipmap/img_message"/>
+            </LinearLayout>
+
+      </LinearLayout>
+      <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+          android:id="@+id/bgalayout_farm"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+      <android.support.v7.widget.RecyclerView
+          android:background="@color/colorhuise"
+          android:id="@+id/er_farm"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+      </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

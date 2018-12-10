@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="60dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/tv_xuanze"
+           android:background="@color/colorbaise"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:textColor="@color/colorAccent"
+           android:text="农产品"></TextView>
+        <TextView
+            android:id="@+id/tv_xuanze_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="家禽"
+            android:gravity="center"
+            android:textColor="@color/colorbaise"
+            android:background="@color/colorPrimary"></TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/bgalayout_warehouse03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/er_warehouse03"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+        <LinearLayout
+            android:id="@+id/ll_to_distribution"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@color/orange"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="去配送"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

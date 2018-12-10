@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/things_name"
+                android:text="温度"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/things_value"
+                android:text="15C"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/things_state"
+                android:text="正常"
+                android:textColor="@color/orange"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/things_time"
+                android:text="2017"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+</LinearLayout>

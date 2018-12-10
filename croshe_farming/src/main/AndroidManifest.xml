@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.croshe.farming">
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- &lt;!&ndash; 蓝牙分享所需的权限 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    //振动
+    <uses-permission android:name="Android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activity.DemoActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--微信调用配置   开始-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <!--微信调用配置  结束-->
+        <receiver android:name=".wxpay.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name=".Login.RegisteredActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.RegisteredTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.ForgetPwd01Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Login.ForgetPwd02Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Login.ForgetPwd03Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".farm.FarmViewActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".farm.FramDetailsActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".farm.PackageRecommendedActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".farm.MyFramDetailasActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".farm.MyFramDetailasTwoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".farm.PackageDetailasActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".PersonalCenter.MyWarehouseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PersonalCenter.SeTupActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.MessageRemindActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activity.AccountSecurityActivity"/>
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ManageReceiveAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.NewAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.BalanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+        android:name=".activity.BalanceDetailsActivity"
+            android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ExpenditureDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.MyOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.FramMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.CashierActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.OrderConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.CropListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ShopCarActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".product.ProductPWDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".product.ProductCollectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".farm.GrowRequiredActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".farm.GrowVedioListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".farm.InternetThingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".farm.GrowVedioActivty"
+            android:theme="@style/AppTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" /> <!-- or android:screenOrientation="landscape"-->
+        <activity
+            android:name=".farm.CostDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.FramMessageDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PersonalCenter.SignListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".farm.PlantNumAcyivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PersonalCenter.SetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PersonalCenter.SetPayPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.OrdeDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PersonalCenter.EvaluateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".product.ScientificCollocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.GlobalSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ProductAcivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".product.ShowAllEvaluateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PersonalCenter.MessageBoxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".product.AllEvaluateAcitivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PersonalCenter.AboutOursActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PersonalCenter.PersonalMessageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PersonalCenter.NormalQuestionAcitivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- alipay sdk end -->
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/ll_item_product"
+    android:visibility="gone">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.croshe.farming.View.MyGridView
+            android:id="@+id/grid_product"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.croshe.farming.View.MyGridView>
+    </LinearLayout>
+    <View
+        android:background="@color/colorhuise"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="@color/orange"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_confrim"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:textSize="18sp" />
+    </LinearLayout>
+<View
+    android:background="@color/orange"
+    android:layout_width="match_parent"
+    android:layout_height="1px"/>
+
+
+</LinearLayout>

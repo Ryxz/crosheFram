@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Croshe_AndroidBase/Croshe_AndroidBase.iml" filepath="$PROJECT_DIR$/Croshe_AndroidBase/Croshe_AndroidBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crosheFram.iml" filepath="$PROJECT_DIR$/crosheFram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/croshe_farming/croshe_farming.iml" filepath="$PROJECT_DIR$/croshe_farming/croshe_farming.iml" />
+    </modules>
+  </component>
+</project>

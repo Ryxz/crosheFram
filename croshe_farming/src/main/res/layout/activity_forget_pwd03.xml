@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorhuise"
+    tools:context="com.croshe.farming.Login.ForgetPwd03Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_left_5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置密码"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorbaise" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorbaise"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择验证方式"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/jiantou" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="安全验证"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/jiantou" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置密码"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorbaise"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="新密码"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="1px"
+        android:background="@color/colorbaise"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_new_pwd_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btu_determine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/head_backgound"
+        android:text="确定"
+        android:textColor="@color/colorbaise"
+        android:textSize="16sp" />
+
+</LinearLayout>

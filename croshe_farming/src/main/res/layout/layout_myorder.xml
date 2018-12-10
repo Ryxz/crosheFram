@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/img_order_back"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/orange"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:background="@drawable/bg_whitelefet"
+                    android:id="@+id/ll_shop"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/text_shoporder1"
+                        android:text="购物订单"
+                        android:textColor="@color/orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_pes"
+                    android:background="@drawable/alert_orange_right_5"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/text_pesorder1"
+                        android:textColor="@color/white"
+                        android:text="配送订单"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:gravity="right">
+            <ImageView
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/img_message"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/orderFragment1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:name="com.croshe.farming.fragment.ShoppingOrderFragment"></fragment>
+
+    <fragment
+        android:id="@+id/orderFragment2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:name="com.croshe.farming.fragment.DistributionFragment"></fragment>
+
+
+</LinearLayout>

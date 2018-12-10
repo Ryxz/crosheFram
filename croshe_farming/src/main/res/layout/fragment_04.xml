@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_back_dis"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fragment1_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="购物车"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/head_backgound"
+            android:gravity="center_vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="编辑"
+            android:textColor="@color/colorbaise"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_img_message"
+            android:layout_marginRight="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/img_message" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_tltie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+    <fragment
+        android:id="@+id/fragment_001"
+        android:name="com.croshe.farming.fragment.MarketFragment01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></fragment>
+
+    <fragment
+        android:id="@+id/fragment_002"
+        android:name="com.croshe.farming.fragment.MarketFragment02"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></fragment>
+</LinearLayout>
